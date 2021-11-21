@@ -14,22 +14,21 @@ public class BillingInformation implements Command {
     public BillingInformation() {
     }
 
-    public BillingInformation sendBillingInformation(Scanner input) throws ParseException {
+    public BillingInformation sendBillingInformation(Scanner input) {
 
-        BillingInformation billinginfo = new BillingInformation();
-        System.out.println("enter card Number");
+        BillingInformation billingInfo = new BillingInformation();
+        System.out.println("enter your card Number");
         long cardNumber = input.nextLong();
-        System.out.println("enter threedigit code");
+        System.out.println("enter ThreeDigit code");
         int threeDigit = input.nextInt();
         System.out.println("enter Name Owner");
-        String cardOwner = input.nextLine();
-        input.nextLine();
+        String cardOwner = input.next();
 
-        billinginfo.cardNumber = cardNumber;
-        billinginfo.cardOwner = cardOwner;
-        billinginfo.threeDigit = threeDigit;
+        billingInfo.cardNumber = cardNumber;
+        billingInfo.cardOwner = cardOwner;
+        billingInfo.threeDigit = threeDigit;
 
-        return billinginfo;
+        return billingInfo;
     }
 
 
