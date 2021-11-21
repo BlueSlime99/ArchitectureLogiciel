@@ -1,6 +1,6 @@
 package domain.client;
 
-import archi.objects.ValueObjectID;
+import objects.ValueObjectID;
 
 import java.util.Objects;
 

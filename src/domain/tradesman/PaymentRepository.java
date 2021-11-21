@@ -1,6 +1,6 @@
 package domain.tradesman;
 
-import archi.service.Repository;
+import service.Repository;
 
 public interface PaymentRepository extends Repository<PaymentId, PaymentTransaction> {
 }

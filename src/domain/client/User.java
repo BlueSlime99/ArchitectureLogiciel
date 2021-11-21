@@ -1,6 +1,6 @@
 package domain.client;
 
-import archi.objects.Entity;
+import objects.Entity;
 
 import java.util.Objects;
 

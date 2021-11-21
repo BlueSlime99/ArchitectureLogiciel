@@ -1,6 +1,6 @@
 package domain.tradesman;
 
-import archi.objects.ValueObjectID;
+import objects.ValueObjectID;
 
 import java.util.Objects;
 

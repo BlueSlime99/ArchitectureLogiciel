@@ -1,6 +1,6 @@
 package exception;
 
-import archi.domain.client.User;
+import domain.client.User;
 
 
 public final class UnvalidEmailException extends RuntimeException {

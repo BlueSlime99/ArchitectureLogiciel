@@ -1,6 +1,6 @@
 package domain.tradesman;
 
-import archi.objects.Entity;
+import objects.Entity;
 
 public class PaymentTransaction implements Entity<PaymentId> {
 
