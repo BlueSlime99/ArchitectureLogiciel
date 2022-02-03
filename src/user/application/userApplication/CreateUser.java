@@ -4,24 +4,28 @@ import kernel.Command;
 
 import java.util.Scanner;
 
-/**
- * Command object
- */
 @SuppressWarnings("all")
 
 public final class CreateUser implements Command {
 
-    private String lastname;
-    private String firstname;
-    private String email;
+     String lastname;
+     String firstname;
+     String email;
 
+
+    public CreateUser(String lastname, String firstname, String email) {
+        this.lastname = lastname;
+        this.firstname = firstname;
+        this.email = email;
+    }
 
     public CreateUser() {
+
     }
 
     public CreateUser sendUserInformation(Scanner input){
 
-        CreateUser user = new CreateUser();
+        CreateUser user = new CreateUser(lastname, firstname, email);
         System.out.println("enter lastname");
         String lastname = input.nextLine();
         System.out.println("enter first name");
@@ -34,6 +38,7 @@ public final class CreateUser implements Command {
         user.email = email;
         return user;
     }
+
 
 
     public String getLastname() {

@@ -1,7 +1,6 @@
 package user.domain.tradesman;
 
 import user.infrastructure.InMemoryPaymentRepository;
-
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.util.Scanner;

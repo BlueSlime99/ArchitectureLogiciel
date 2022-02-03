@@ -11,6 +11,7 @@ public final class User implements Entity<UserId> {
     private final String firstname;
     private final String email;
 
+
     public User(UserId id, String lastname, String firstname, String email) {
         this.id = id;
         this.lastname = lastname;

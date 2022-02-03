@@ -24,11 +24,11 @@ public class InMemoryPaymentRepository implements PaymentRepository {
 
     @Override
     public PaymentTransaction findById(PaymentId id) throws NoSuchEntityException {
-        final PaymentTransaction transcation = data.get(id);
-        if (transcation == null) {
+        final PaymentTransaction transaction = data.get(id);
+        if (transaction == null) {
             throw NoSuchEntityException.paymentWithId(id);
         }
-        return transcation;
+        return transaction;
     }
 
     @Override
